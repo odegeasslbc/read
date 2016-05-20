@@ -50,7 +50,7 @@ func make_train(){
 
         while let element = enumerator.nextObject() as? String {
             if(numberOfImg%9 != 0){
-                contents.appendContentsOf("\(key)/\(element) \(value)\n")
+                contents.appendContentsOf("/Users/liubingchen/Researches/merged_images/\(key)/\(element) \(value) 1\n")
             }
             numberOfImg += 1
         }
@@ -83,7 +83,7 @@ func make_val(){
 
         while let element = enumerator.nextObject() as? String {
             if(nbrOfImg%9 == 0){
-                contents.appendContentsOf("\(key)/\(element) \(value)\n")
+                contents.appendContentsOf("/Users/liubingchen/Researches/merged_images/\(key)/\(element) \(value) 1\n")
             }
             nbrOfImg += 1
         }
